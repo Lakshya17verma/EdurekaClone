@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | EdurekaClone - Instructor-Lead Online Training with 24X7 Lifetime Support </title>
+    <link rel="shortcut icon" href="homepage-img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- discount ad para section -->
+    <p class="ad-para">
+        <a href="">Super Weekday Deal - Flat 10% Off + 20% Cashback | OFFER ENDING IN :<span class="time"> 00</span>D
+            <span class="time"> 15</span>H <span class="time"> 29</span>M <span class="time"> 41</span>S <span
+                class="grab-now"> GRAB NOW</span>
+        </a>
+        <span id="cutAd">X</span>
+    </p>
+    <!-- header section starts here -->
+    <header class="dflex header">
+        <div class="dflex logo-nav-btn ">
+            <div class="mob-nav-btn">
+                <i class="fa-sharp fa-solid fa-bars"></i>
+            </div>
+            <img class="logo" src="homepage-img/Edureka-logo.webp" alt="Edureka Logo">
+        </div>
+        <div class="dflex search-text-btn ">
+            <input type="text" name="" id="" placeholder="Enter course, Category or keyword ">
+            <button type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+        </div>
+        <nav>
+            <ul class="dflex header-nav-ul">
+                <li><a>Corporate Training</a></li>
+                <li><a>Courses</a></li>
+                <li><a>Blog</a></li>
+                <li><a href="">Log In</a> </li>
+                <li><a href="">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="call">
+            <a href="tel:'+0123456789'"><i class="fa-solid fa-phone"></i></a>
+            <button id="viewOffer">View Offer</button>
+        </div>
+    </header>
+    <!-- mobile navigation bar section starts here -->
+    <div class="browse-cat-con">
+        <div class="inner-con">
+            <div class="brows-cat-heading">
+                <b>Browse Categories</b><i class="fa-regular fa-circle-xmark"></i>
+            </div>
+            <div class="dflex cat-slide-con">
+                <ul class="dflex left-side">
+                    <li class="dflex" onclick="goRight()">
+                        <a>Categories</a><i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li><a href="">Corporate Training</a></li>
+                    <li><a href="">Courses</a></li>
+                    <li><button class="login-btn">Log In</button></li>
+                    <li><button class="signup-btn">Sign Up</button></li>
+                </ul>
+                <ul class="dflex right-side">
+                    <li class="dflex" onclick="goLeft()">
+                        <i class="fa-solid fa-chevron-left"></i><a>Categories</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- navigation bar section starts here -->
+    <nav class="dflex nav-bar">
+        <div class="dflex browse-categores" onclick="openBrowseCat()">
+            <small>Browse</small>
+            <b>Categories&#9662;</b>
+            <ul class="categories"></ul>
+        </div>
+        <ul class="dflex desktop-main-nav"></ul>
+        <div class="dflex hamberger-btn">
+            <i class="fa-sharp fa-solid fa-bars" id="showNav"></i>
+            <ul class="hidden-dropdown"></ul>
+        </div>
+    </nav>
+
+    <!-- ad image slide section starts here -->
+    <section class="carousel-and-courses">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="dflex swiper-slide">
+                    <img src="./homepage-img/homepageBanner-1.jpg" alt="" srcset="">
+                </div>
+                <div class="dflex swiper-slide">
+                    <img src="./homepage-img/homepage-banner-2.jpg" alt="" srcset="">
+                </div>
+                <div class="dflex swiper-slide">
+                    <img src="./homepage-img/homepage-banner-3.jpg" alt="" srcset="">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+        <!-- main couses section starts here -->
+        <section class="dflex main-courses-section">
+            <div class="dflex courses-3-grid">
+                <div class="dflex course-name">
+                    <small>become a</small>
+                    <b>DevOps Engeneer</b>
+                </div>
+                <a href="">Know more <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="dflex courses-3-grid">
+                <div class="dflex course-name">
+                    <small>become an</small>
+                    <b>Cloud architect</b>
+                </div>
+                <a href="">Know more <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="dflex courses-3-grid">
+                <div class="dflex course-name">
+                    <small>become a</small>
+                    <b>data scientist</b>
+                </div>
+                <a href="">Know more <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+        </section>
+    </section>
+    <!-- trending courses section starts header -->
+    <!-- <main class="dflex trending-courses-sec">
+        <b>TRENDING COURSES</b>
+        <ul class="dflex trending-courses-nav">
+            <li>All</li>
+            <li>cloud computing</li>
+            <li>DevOps</li>
+            <li>BI & Visualization</li>
+            <li>Cyber security</li>
+            <li>data science</li>
+            <li>programming & frameworks</li>
+            <li><i class="fa-sharp fa-solid fa-bars" id="showNav"></i></li>
+        </ul>
+    </main> -->
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
