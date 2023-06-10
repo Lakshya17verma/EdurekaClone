@@ -1,0 +1,46 @@
+ <li class="categories-li-items">
+        <a href="">cloud</a>
+        <ul class="cat-item-details">
+                <li>cloud computing</li>
+        </ul> 
+</li>
+                
+<div class="cat-item-card">
+    <h4>master program</h4>
+    <br>
+    <div class="dflex mark-title">
+        <img src="./homepage-img/master-program.png" alt="">
+        <p>cloud architect master program</p>
+    </div>
+    <div class="dflex card-details">
+        <div class="courses">
+            <small>courses</small>
+            <br>
+            <span>12</span>
+        </div>
+        <div class="hours">
+            <small>hours</small>
+            <br>
+            <span>250</span>
+        </div>
+        <div class="learners">
+            <small>learners</small>
+            <br>
+            <span>31k</span>
+        </div>
+    </div>
+    <div class="card-review">
+        <span>review</span>
+        <span>
+            <i class="fa-solid fa-star star-color"></i>
+            <i class="fa-solid fa-star star-color"></i>
+            <i class="fa-solid fa-star star-color"></i>
+            <i class="fa-solid fa-star star-color"></i>
+            <i class="fa-solid fa-star"></i>
+            4.4(1200)
+        </span>
+    </div>
+    <button class="card-view-details">View Details</button>
+</div>
+
+catItemDetailsCard[catLi.indexOf(element)][n]

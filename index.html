@@ -16,8 +16,8 @@
 
 <body>
     <!-- discount ad para section -->
-    <p class="ad-para">
-        <a href="">Super Weekday Deal - Flat 10% Off + 20% Cashback | OFFER ENDING IN :<span class="time"> 00</span>D
+    <p class="ad-para hide">
+        <a href="">Super Weekday Deal - Flat 10% Off + 20% Cashback | OFFER ENDING IN : <span class="time"> 00</span>D
             <span class="time"> 15</span>H <span class="time"> 29</span>M <span class="time"> 41</span>S <span
                 class="grab-now"> GRAB NOW</span>
         </a>
@@ -46,10 +46,10 @@
         </nav>
         <div class="call">
             <a href="tel:'+0123456789'"><i class="fa-solid fa-phone"></i></a>
-            <button id="viewOffer">View Offer</button>
+            <button id="viewOffer" class="hide">View Offer</button>
         </div>
     </header>
-    <!-- mobile navigation bar section starts here -->
+    <!-- mobile navigation bar section starts here (min width 800px) -->
     <div class="browse-cat-con">
         <div class="inner-con">
             <div class="brows-cat-heading">
@@ -73,20 +73,29 @@
             </div>
         </div>
     </div>
-    <!-- navigation bar section starts here -->
+    <!--main navigation bar section starts here -->
     <nav class="dflex nav-bar">
         <div class="dflex browse-categores" onclick="openBrowseCat()">
-            <small>Browse</small>
-            <b>Categories&#9662;</b>
-            <ul class="categories"></ul>
+            <div class="dflex browse-cat-icon">
+                <small>Browse</small>
+                <b>Categories&#9662;</b>
+            </div>
+            <div class="cat-item-container">
+                <ul class="categories">
+                </ul>
+                <ul class="cat-item-details">
+                </ul>
+                <div class="cat-item-card">
+                </div>
+            </div>
         </div>
         <ul class="dflex desktop-main-nav"></ul>
         <div class="dflex hamberger-btn">
             <i class="fa-sharp fa-solid fa-bars" id="showNav"></i>
-            <ul class="hidden-dropdown"></ul>
+            <ul class="hidden-dropdown">
+            </ul>
         </div>
     </nav>
-
     <!-- ad image slide section starts here -->
     <section class="carousel-and-courses">
         <div class="swiper mySwiper">
@@ -100,6 +109,15 @@
                 <div class="dflex swiper-slide">
                     <img src="./homepage-img/homepage-banner-3.jpg" alt="" srcset="">
                 </div>
+                <div class="dflex swiper-slide">
+                    <img src="./homepage-img/homepage-banner-4.jpg" alt="" srcset="">
+                </div>
+                <div class="dflex swiper-slide">
+                    <img src="./homepage-img/homepage-banner-5.jpg" alt="" srcset="">
+                </div>
+                <div class="dflex swiper-slide">
+                    <img src="./homepage-img/homepage-banner-6.jpg" alt="" srcset="">
+                </div>
             </div>
             <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div>
@@ -109,46 +127,62 @@
         <!-- main couses section starts here -->
         <section class="dflex main-courses-section">
             <div class="dflex courses-3-grid">
-                <div class="dflex course-name">
-                    <small>become a</small>
-                    <b>DevOps Engeneer</b>
-                </div>
-                <a href="">Know more <i class="fa-solid fa-chevron-right"></i></a>
-            </div>
-            <div class="dflex courses-3-grid">
-                <div class="dflex course-name">
+                <span>
                     <small>become an</small>
-                    <b>Cloud architect</b>
-                </div>
+                    <br>
+                    <b>DevOps Engeneer</b>
+                </span>
+                <a href="">Know more<i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="dflex courses-3-grid">
+                <span>
+                    <small>become an</small>
+                    <br>
+                    <b>DevOps Engeneer</b>
+                </span>
                 <a href="">Know more <i class="fa-solid fa-chevron-right"></i></a>
             </div>
             <div class="dflex courses-3-grid">
-                <div class="dflex course-name">
-                    <small>become a</small>
-                    <b>data scientist</b>
-                </div>
-                <a href="">Know more <i class="fa-solid fa-chevron-right"></i></a>
+                <span>
+                    <small>become an</small>
+                    <br>
+                    <b>DevOps Engeneer</b>
+                </span>
+                <a href="">Know more<i class="fa-solid fa-chevron-right"></i></a>
             </div>
         </section>
     </section>
     <!-- trending courses section starts header -->
-    <!-- <main class="dflex trending-courses-sec">
+    <main class="dflex trending-courses-sec">
         <b>TRENDING COURSES</b>
-        <ul class="dflex trending-courses-nav">
-            <li>All</li>
-            <li>cloud computing</li>
-            <li>DevOps</li>
-            <li>BI & Visualization</li>
-            <li>Cyber security</li>
-            <li>data science</li>
-            <li>programming & frameworks</li>
-            <li><i class="fa-sharp fa-solid fa-bars" id="showNav"></i></li>
-        </ul>
-    </main> -->
-
-
+        <div class="dflex trending-nav-con">
+            <b>All</b>
+            <ul class="trending-courses-nav">
+                <li>cloud computing</li>
+                <li>DevOps</li>
+                <li>BI & Visualization</li>
+                <li>Cyber security</li>
+                <li>data science</li>
+                <li>programming & frameworks</li>
+            </ul>
+            <i class="fa-sharp fa-solid fa-bars" id="showTrendingCourses"></i>
+            <ul class="trending-couses-items">
+            </ul>
+        </div>
+        <div class="trainding-courses-grid">
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+            <div class="grid-item"></div>
+        </div>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="data.js"></script>
     <script src="script.js"></script>
 </body>
 

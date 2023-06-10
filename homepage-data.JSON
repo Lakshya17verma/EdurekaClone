@@ -5,7 +5,7 @@
         "BI and Visualization",
         "Cyber Security",
         "Data Science",
-        "Programming&Frameworks",
+        "Programming & Frameworks",
         "Project Management & Methodology",
         "software Testing",
         "big data",
@@ -15,10 +15,33 @@
         "robotics process Automation",
         "data warehousing and ETL",
         "digital marketing",
-        "Operating systemsd",
+        "Operating systems",
         "mobile development",
         "architecture and design patternsd",
         "blockchain",
-        "mobile developme"
-    ]
-}
+        "mobile development"
+    ],
+    "catItemDetails": {
+        "CloudComputing": [
+            "cloud architect master program",
+            "Microsoft Azure Cloud Engineer Masters Program",
+            "designing microsoft azure architect certification course",
+            "salesforce CRM master certification program",
+            "AWS master program",
+            "microservices certification training course",
+            "AWS developer certification training",
+            "google cloud platform (GCP) certification training course"
+        ],
+        "DevOps": [
+            "cloud architect master program",
+            "Microsoft Azure Cloud Engineer Masters Program",
+            "designing microsoft azure architect certification course",
+            "salesforce CRM master certification program",
+            "AWS master program",
+            "microservices certification training course",
+            "AWS developer certification training",
+            "google cloud platform (GCP) certification training course"
+        ]
+    }
+
+ }
