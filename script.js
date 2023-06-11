@@ -115,24 +115,6 @@ mobileNavBtn.addEventListener("click", () => {
 showTrendingCourses.addEventListener("click", () => {
   trendingCoursesItems.classList.toggle("show");
 });
-// parse jason file to populate html to show categories in navbaar
-
-
-fetch('homepage-data.json')
-  .then((response) => response.json())
-  .then((list) => {
-
-    for (let i = 0; i < 8; i++) {
-      deskMainNav.innerHTML += `<li><a>${list.categoriesItems[i]}</a></li>`
-    }
-    for (let i = 0; i < list.categoriesItems.length; i++) {
-      hiddenDropdown.innerHTML += `<li class="hidden-dropdown-items"><a>${list.categoriesItems[i]}</a></li>`;
-
-      rightSide.innerHTML += `<li class="right-slide-items categories-li-items"><a>${list.categoriesItems[i]}</a></li>`
-      trendingCoursesItems.innerHTML += `<li class="item-list"><a>${list.categoriesItems[i]}</a></li>`
-    }
-
-  });
 
 
 // image swiper
@@ -155,9 +137,17 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+for (let i = 0; i < 8; i++) {
+  deskMainNav.innerHTML += `<li><a>${categoriesItems[i]}</a></li>`
+}
+for (let i = 0; i<categoriesItems.length; i++){
+  catagories.innerHTML += `<li class="categories-li-items"><a class="cat-li-items-a">${categoriesItems[i]}</a></li>`;
 
-for (let i = 0; i < categoriesItems.length; i++) {
-  catagories.innerHTML += `<li class="categories-li-items"><a class="cat-li-items-a">${categoriesItems[i]}</a></li>`
+  hiddenDropdown.innerHTML += `<li class="hidden-dropdown-items"><a>${categoriesItems[i]}</a></li>`;
+
+  rightSide.innerHTML += `<li class="right-slide-items categories-li-items"><a>${categoriesItems[i]}</a></li>`;
+
+  trendingCoursesItems.innerHTML += `<li class="item-list"><a>${categoriesItems[i]}</a></li>`;
 }
 
 catLi = Array.from(catagories.children)
@@ -167,7 +157,7 @@ catLi.forEach(element => {
     for (let i = 0; i < catItemDetailslist[catLi.indexOf(element)].length; i++) {
       catItemDetails.innerHTML += `<li>${catItemDetailslist[catLi.indexOf(element)][i]}</li>`;
     }
-     catItemCard.innerHTML = `<h4>${catItemDetailsCard[catLi.indexOf(element)][0]}</h4>
+    catItemCard.innerHTML = `<h4>${catItemDetailsCard[catLi.indexOf(element)][0]}</h4>
 <br>
 <div class="dflex mark-title">
     <img src="${catItemDetailsCard[catLi.indexOf(element)][1]}" alt="">
