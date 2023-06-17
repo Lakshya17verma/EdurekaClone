@@ -43,4 +43,40 @@
     <button class="card-view-details">View Details</button>
 </div>
 
-catItemDetailsCard[catLi.indexOf(element)][n]
+------------------------------------------------------
+
+
+<div class="grid-4">
+    <div class="course-img">
+        <span>
+            <i class="fa-brands fa-aws"></i>
+        </span>
+        <span>AWS solutions
+            certification training course
+        </span>
+    </div>
+    <div class="course-desc">
+        <b>AWS solutions architect certification training </b>
+        <div class="course-desc-details">
+            <small>Review</small>
+             <span>
+                <i class="fa-solid fa-star star-color"></i>
+                <i class="fa-solid fa-star star-color"></i>
+                <i class="fa-solid fa-star star-color"></i>
+                <i class="fa-solid fa-star star-color"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+                4.4(1200)
+            </span>
+        </div>
+    </div>
+</div>
+
+<i><small>next batch</small></i>
+<span>in 10 Days</span>
+<i><small>what will I learn?</small></i>
+<ul>
+    <li>heloo world hello</li>
+    <li>heloo world hello</li>
+    <li>heloo world hello</li>
+</ul>
+<button> view details </button>

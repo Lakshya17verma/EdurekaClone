@@ -119,7 +119,7 @@ showTrendingCourses.addEventListener("click", () => {
 
 // image swiper
 var swiper = new Swiper(".mySwiper", {
-  speed: 1400,
+  speed: 1000,
   slidesPerView: 1,
   spaceBetween: 30,
   loop: true,
@@ -128,7 +128,7 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
   autoplay: {
-    delay: 2800,
+    delay: 2000,
     disableOnInteraction: false,
   },
   navigation: {
@@ -140,7 +140,7 @@ var swiper = new Swiper(".mySwiper", {
 for (let i = 0; i < 8; i++) {
   deskMainNav.innerHTML += `<li><a>${categoriesItems[i]}</a></li>`
 }
-for (let i = 0; i<categoriesItems.length; i++){
+for (let i = 0; i < categoriesItems.length; i++) {
   catagories.innerHTML += `<li class="categories-li-items"><a class="cat-li-items-a">${categoriesItems[i]}</a></li>`;
 
   hiddenDropdown.innerHTML += `<li class="hidden-dropdown-items"><a>${categoriesItems[i]}</a></li>`;
@@ -152,7 +152,7 @@ for (let i = 0; i<categoriesItems.length; i++){
 
 catLi = Array.from(catagories.children)
 catLi.forEach(element => {
-  element.addEventListener("mouseenter", () => {
+  element.addEventListener("mouseover", () => {
     catItemDetails.innerHTML = "";
     for (let i = 0; i < catItemDetailslist[catLi.indexOf(element)].length; i++) {
       catItemDetails.innerHTML += `<li>${catItemDetailslist[catLi.indexOf(element)][i]}</li>`;
@@ -196,3 +196,55 @@ catLi.forEach(element => {
 });
 
 
+// trending courses main section script
+
+var swiper = new Swiper(".mySwiper2", {
+  slidesPerView: "auto",
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+const grid4 = document.querySelectorAll(".grid-4");
+
+const grid4Array = Array.from(grid4);
+
+grid4Array.forEach(thisElement => {
+  thisElement.innerHTML += `<div class="course-img" style="background-image:${trendingCoursesDetails[grid4Array.indexOf(thisElement)][0]};">
+    <span>
+        <i class="${trendingCoursesDetails[grid4Array.indexOf(thisElement)][1]}"></i>
+    </span>
+    <span>${trendingCoursesDetails[grid4Array.indexOf(thisElement)][2]}
+    </span>
+   </div>
+   <div class="course-desc">
+    <b>${trendingCoursesDetails[grid4Array.indexOf(thisElement)][3]}</b>
+    <div class="course-desc-details">
+        <small>Review</small>
+         <span>
+            <i class="${trendingCoursesDetails[grid4Array.indexOf(thisElement)][4]}"></i>
+            <i class="${trendingCoursesDetails[grid4Array.indexOf(thisElement)][5]}"></i>
+            <i class="${trendingCoursesDetails[grid4Array.indexOf(thisElement)][6]}"></i>
+            <i class="${trendingCoursesDetails[grid4Array.indexOf(thisElement)][7]}"></i>
+            <i class="${trendingCoursesDetails[grid4Array.indexOf(thisElement)][8]}"></i>
+            ${trendingCoursesDetails[grid4Array.indexOf(thisElement)][9]}${trendingCoursesDetails[grid4Array.indexOf(thisElement)][10]}
+        </span>
+    </div>
+   </div>`
+})
+
+
+const grid4hover = Array.from(document.querySelectorAll(".grid-4-hover")) 
+grid4hover.forEach(hoverElement => {
+  hoverElement.innerHTML = `<i><small>next batch</small></i>
+ <span>${trendingCoursesDetails[grid4hover.indexOf(hoverElement)][11]}</span>
+ <i><small>what will I learn?</small></i>
+ <ul>
+     <li>${trendingCoursesDetails[grid4hover.indexOf(hoverElement)][12]}</li>
+     <li>${trendingCoursesDetails[grid4hover.indexOf(hoverElement)][13]}</li>
+     <li>${trendingCoursesDetails[grid4hover.indexOf(hoverElement)][14]}</li>
+ </ul>
+ <button>View Details</button>`
+})
