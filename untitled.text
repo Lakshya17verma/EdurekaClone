@@ -1,82 +1,16 @@
- <li class="categories-li-items">
-        <a href="">cloud</a>
-        <ul class="cat-item-details">
-                <li>cloud computing</li>
-        </ul> 
-</li>
-                
-<div class="cat-item-card">
-    <h4>master program</h4>
-    <br>
-    <div class="dflex mark-title">
-        <img src="./homepage-img/master-program.png" alt="">
-        <p>cloud architect master program</p>
-    </div>
-    <div class="dflex card-details">
-        <div class="courses">
-            <small>courses</small>
-            <br>
-            <span>12</span>
-        </div>
-        <div class="hours">
-            <small>hours</small>
-            <br>
-            <span>250</span>
-        </div>
-        <div class="learners">
-            <small>learners</small>
-            <br>
-            <span>31k</span>
-        </div>
-    </div>
-    <div class="card-review">
-        <span>review</span>
-        <span>
-            <i class="fa-solid fa-star star-color"></i>
-            <i class="fa-solid fa-star star-color"></i>
-            <i class="fa-solid fa-star star-color"></i>
-            <i class="fa-solid fa-star star-color"></i>
-            <i class="fa-solid fa-star"></i>
-            4.4(1200)
-        </span>
-    </div>
-    <button class="card-view-details">View Details</button>
+<div class="grid2-child-img">
+  <i class="fa-brands fa-aws"></i>
+  <span>devops Engeneer master program</span>
 </div>
-
-------------------------------------------------------
-
-
-<div class="grid-4">
-    <div class="course-img">
-        <span>
-            <i class="fa-brands fa-aws"></i>
-        </span>
-        <span>AWS solutions
-            certification training course
-        </span>
-    </div>
-    <div class="course-desc">
-        <b>AWS solutions architect certification training </b>
-        <div class="course-desc-details">
-            <small>Review</small>
-             <span>
-                <i class="fa-solid fa-star star-color"></i>
-                <i class="fa-solid fa-star star-color"></i>
-                <i class="fa-solid fa-star star-color"></i>
-                <i class="fa-solid fa-star star-color"></i>
-                <i class="fa-solid fa-star-half-stroke"></i>
-                4.4(1200)
-            </span>
-        </div>
-    </div>
+<div class="grid2-child-desc">
+  <b>devops engeneer master program</b>
+  <small>Review</small>
+  <span>
+      <i class="fa-solid fa-star star-color"></i>
+      <i class="fa-solid fa-star star-color"></i>
+      <i class="fa-solid fa-star star-color"></i>
+      <i class="fa-solid fa-star star-color"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+      4.4(1200)
+  </span>
 </div>
-
-<i><small>next batch</small></i>
-<span>in 10 Days</span>
-<i><small>what will I learn?</small></i>
-<ul>
-    <li>heloo world hello</li>
-    <li>heloo world hello</li>
-    <li>heloo world hello</li>
-</ul>
-<button> view details </button>

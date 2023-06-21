@@ -162,7 +162,7 @@ const catItemDetailslist = [
 
 const catItemDetailsCard = [
     CloudComputing = [
-        "master program", "./homepage-img/master-program.png", "cloud architect master program", "12", "250", "31k"
+        "master program", "./homepage-img/master-program-2.png", "cloud architect master program", "12", "250", "31k"
     ],
     DevOps = [
         "live course", "./homepage-img/master-program.png", "DevOps certification training Course", "10", "200", "11k"

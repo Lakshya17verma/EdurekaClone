@@ -128,7 +128,7 @@ var swiper = new Swiper(".mySwiper", {
     clickable: true,
   },
   autoplay: {
-    delay: 2000,
+    delay: 3000,
     disableOnInteraction: false,
   },
   navigation: {
@@ -247,4 +247,59 @@ grid4hover.forEach(hoverElement => {
      <li>${trendingCoursesDetails[grid4hover.indexOf(hoverElement)][14]}</li>
  </ul>
  <button>View Details</button>`
+});
+
+var swiper = new Swiper(".mySwiper3", {
+  slidesPerView: "auto",
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+const grid2 = document.querySelectorAll(".grid2-child");
+
+const grid2Array = Array.from(grid2);
+
+grid2Array.forEach(grid2items =>{
+  grid2items.innerHTML  += `<div class="grid2-child-img" style="background-image:${trendingCoursesDetails[grid2Array.indexOf(grid2items)][0]};">
+  <i class="${trendingCoursesDetails[grid2Array.indexOf(grid2items)][1]}"></i>
+  <span>${trendingCoursesDetails[grid2Array.indexOf(grid2items)][2]}</span>
+</div>
+<div class="grid2-child-desc">
+  <b>${trendingCoursesDetails[grid2Array.indexOf(grid2items)][3]}</b>
+  <small>Review</small>
+  <span>
+  <i class="${trendingCoursesDetails[grid2Array.indexOf(grid2items)][4]}"></i>
+  <i class="${trendingCoursesDetails[grid2Array.indexOf(grid2items)][5]}"></i>
+  <i class="${trendingCoursesDetails[grid2Array.indexOf(grid2items)][6]}"></i>
+  <i class="${trendingCoursesDetails[grid2Array.indexOf(grid2items)][7]}"></i>
+  <i class="${trendingCoursesDetails[grid2Array.indexOf(grid2items)][8]}"></i>
+  ${trendingCoursesDetails[grid2Array.indexOf(grid2items)][9]}${trendingCoursesDetails[grid2Array.indexOf(grid2items)][10]}
+  </span>
+</div>`
 })
+
+const grid2hover = Array.from(document.querySelectorAll(".grid-2-hover")) 
+grid2hover.forEach(grid2hoverElement => {
+  grid2hoverElement.innerHTML = `<i><small>next batch</small></i>
+ <span>${trendingCoursesDetails[grid2hover.indexOf(grid2hoverElement)][11]}</span>
+ <i><small>what will I learn?</small></i>
+ <ul>
+     <li>${trendingCoursesDetails[grid2hover.indexOf(grid2hoverElement)][12]}</li>
+     <li>${trendingCoursesDetails[grid2hover.indexOf(grid2hoverElement)][13]}</li>
+     <li>${trendingCoursesDetails[grid2hover.indexOf(grid2hoverElement)][14]}</li>
+ </ul>
+ <button>View Details</button>`
+});
+
+
+var swiper = new Swiper(".mySwiper4", {
+  slidesPerView: "auto",
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

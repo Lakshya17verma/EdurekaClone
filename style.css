@@ -28,7 +28,6 @@ body {
     color: black;
     font-family: var(--mainFont);
     width: 100vw;
-    height: 100%;
     overflow-x: hidden !important;
 }
 
@@ -40,6 +39,11 @@ li {
 a {
     color: black;
     text-decoration: none;
+}
+
+button {
+    border: none;
+    outline: none;
 }
 
 /* reusable code blocks */
@@ -124,8 +128,7 @@ a {
     width: 40%;
 }
 
-.search-text-btn>input,
-button {
+.search-text-btn>input {
     border: none;
     outline: none;
 }
@@ -191,8 +194,6 @@ button {
     background-color: white;
     color: #0c5397;
     border-radius: 2px;
-    border: none;
-    outline: none;
 }
 
 .hamberger-btn>i {
@@ -647,6 +648,7 @@ li:visited li:active {
     font-size: 1.2rem;
     color: #404040;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .trending-nav-con {
@@ -758,6 +760,8 @@ li:visited li:active {
 
 .grid-slid-next,
 .grid-slide-prev {
+    border: none !important;
+    outline: none !important;
     background-color: white;
 }
 
@@ -779,42 +783,45 @@ li:visited li:active {
 }
 
 .grid-4-hover {
-    display: none;
     position: absolute;
-    align-items: stretch;
-    justify-content: start;
+    display: none;
     flex-direction: column;
-    width: 100%;
+    align-items: start;
+    justify-content: space-between;
+    max-width: 100%;
     height: 100%;
     top: 0;
     left: 0;
     right: 0;
     left: 0;
-    padding: 1rem;
+    padding: 0.8rem;
     background-color: rgba(0, 0, 0, 0.9);
     color: white;
     font-size: 0.9rem;
     text-transform: capitalize;
-    & span{
-        margin: 6px 0;
+
+    & span {
+        margin: 4px 0;
     }
+
     & ul li::before {
         content: "\2022";
         font-weight: bold;
         display: inline-block;
         width: 1em;
     }
-    & li{
+
+    & li {
         display: -webkit-box;
         -webkit-line-clamp: 1;
         -webkit-box-orient: vertical;
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    & button{
-        margin: auto;
+
+    & button {
+        margin: 0 auto;
         border: 1px solid white;
-        outline: none;
         background: transparent;
         color: white;
         width: 100%;
@@ -834,7 +841,7 @@ li:visited li:active {
     align-items: center;
     justify-content: space-between;
     gap: 1rem;
-    padding: 1rem;
+    padding: 1.1rem;
     font-weight: bold;
     font-size: 1rem;
     color: white;
@@ -882,24 +889,146 @@ li:visited li:active {
 .course-desc-details>span>i {
     color: orange;
 }
-.all-cat{
+
+.all-cat {
     display: flex;
     flex-direction: column;
     text-align: center;
     padding: 10px;
-    & button{
+
+    & a {
         width: 250px;
         margin: 10px auto;
         padding: 0.5rem 1rem;
         color: white;
         font-size: 1rem;
         cursor: pointer;
+        border-radius: 2px;
         background: linear-gradient(to right, #3895E6, #384FE6);
     }
-    & i{
+
+    & i {
         font-size: 1.2rem;
         font-weight: 200;
         color: #404040;
     }
 }
+
 /* trending courses section ends here */
+
+/* carrer-related-program-section starts here */
+.grid-2 {
+    width: 75%;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.grid2-child {
+    position: relative;
+    min-width: 49%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 9px 6px 22px 0 rgba(0, 0, 0, 0.08);
+    cursor: pointer;
+}
+
+.grid-2-hover{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+    max-width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    left: 0;
+    padding: 0.8rem;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+
+    & span {
+        margin: 4px 0;
+    }
+
+    & ul li::before {
+        content: "\2022";
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+    }
+
+    & li {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    & button {
+        margin: 0 auto;
+        border: 1px solid white;
+        background: transparent;
+        color: white;
+        width: 100%;
+        cursor: pointer;
+        padding: 0.5rem 0.8rem;
+        font-size: 1rem;
+    }
+}
+.grid2-child:hover .grid-2-hover{
+    display: flex;
+}
+.grid2-child-img,
+.grid2-child-desc {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0.8rem;
+}
+
+.grid2-child-img {
+    color: white;
+    background-image: linear-gradient(242deg, #f49cae, #b05ce2);
+}
+
+.grid2-child-img>i {
+    font-size: 3rem;
+}
+
+.grid2-child-img>span {
+    font-size: 1.2rem;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.grid2-child-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid2-child-desc>span>i {
+    color: orange;
+}
+
+.grid2-child-desc>small {
+    color: grey;
+    font-style: italic;
+    font-size: 12px;
+    margin: 0.5rem 0 0 0;
+}
+
+/* carrer-related-program-section ends here */

@@ -7,6 +7,9 @@
     .swiper-slide {
         width: 75%;
     }
+    .grid-2{
+        width: 90%;
+    }
 }
 
 @media (max-width:1100px) {
@@ -61,7 +64,12 @@
     .trending-nav-con>.trending-courses-nav>li:nth-last-child(even) {
         display: none;
     }
-
+   .grid-4-hover{
+    padding: 0.5rem;
+   }
+   .grid-2{
+    width: 100%;
+}
 }
 
 /* media query for mobile resposive design */
@@ -169,7 +177,7 @@
         width: 100px;
         justify-content: center;
         height: 100%;
-        padding: 0.5rem;
+        padding: 0.4rem;
     }
 
     .grid-4>.course-img span:nth-child(2) {
@@ -177,7 +185,7 @@
     }
 
     .course-desc {
-        padding: 6px;
+        padding: 4px;
     }
 
     .course-desc>b {
@@ -201,11 +209,36 @@
         display: none;
     }
     .all-cat{
-        & button{
+        & a{
             width: 200px;
         }
         & i{
             font-size: 1rem;
         }
+    }
+    .grid-2{
+        flex-direction: column;
+    }
+    .grid2-child{
+        width: 99%;
+        flex-direction: row;
+    }
+    .grid2-child-img{
+        justify-content: center;
+        align-items: center;
+        width: 18%;
+    }
+    .grid2-child-desc{
+        gap: 5px;
+        width: 78%;
+    }
+    .grid2-child-desc > small{
+        margin: 0;
+    }
+    .grid2-child-img > span{
+        display: none;
+    }
+    .grid2-child:hover .grid-2-hover{
+        display: none;
     }
 }
