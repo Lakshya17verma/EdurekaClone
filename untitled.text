@@ -14,3 +14,30 @@
       4.4(1200)
   </span>
 </div>
+
+
+
+recently added grid 2
+
+ <div class="recently-add-grid-items-pic">
+                                <b>chat-gpt4 complete course: beginners to advanced</b>
+                            </div>
+                            <div class="recently-add-grid-items-desc">
+                                <p>chat-gpt4 complete course: beginners to advanced certification training course</p>
+                                <small>Review</small>
+                                <span>
+                                    <i class="fa-solid fa-star star-color"></i>
+                                    <i class="fa-solid fa-star star-color"></i>
+                                    <i class="fa-solid fa-star star-color"></i>
+                                    <i class="fa-solid fa-star star-color"></i>
+                                    <i class="fa-solid fa-star-half-stroke"></i>
+                                    4.4(1200)
+                                </span>
+                            </div>
+
+
+discover categories items
+<a href="">
+                <i class="fa-solid fa-cloud"></i>
+                <small>Cloud Computing</small>
+            </a>

@@ -236,7 +236,7 @@ grid4Array.forEach(thisElement => {
 })
 
 
-const grid4hover = Array.from(document.querySelectorAll(".grid-4-hover")) 
+const grid4hover = Array.from(document.querySelectorAll(".grid-4-hover"))
 grid4hover.forEach(hoverElement => {
   hoverElement.innerHTML = `<i><small>next batch</small></i>
  <span>${trendingCoursesDetails[grid4hover.indexOf(hoverElement)][11]}</span>
@@ -262,8 +262,8 @@ const grid2 = document.querySelectorAll(".grid2-child");
 
 const grid2Array = Array.from(grid2);
 
-grid2Array.forEach(grid2items =>{
-  grid2items.innerHTML  += `<div class="grid2-child-img" style="background-image:${trendingCoursesDetails[grid2Array.indexOf(grid2items)][0]};">
+grid2Array.forEach(grid2items => {
+  grid2items.innerHTML += `<div class="grid2-child-img" style="background-image:${trendingCoursesDetails[grid2Array.indexOf(grid2items)][0]};">
   <i class="${trendingCoursesDetails[grid2Array.indexOf(grid2items)][1]}"></i>
   <span>${trendingCoursesDetails[grid2Array.indexOf(grid2items)][2]}</span>
 </div>
@@ -281,7 +281,7 @@ grid2Array.forEach(grid2items =>{
 </div>`
 })
 
-const grid2hover = Array.from(document.querySelectorAll(".grid-2-hover")) 
+const grid2hover = Array.from(document.querySelectorAll(".grid-2-hover"))
 grid2hover.forEach(grid2hoverElement => {
   grid2hoverElement.innerHTML = `<i><small>next batch</small></i>
  <span>${trendingCoursesDetails[grid2hover.indexOf(grid2hoverElement)][11]}</span>
@@ -303,3 +303,52 @@ var swiper = new Swiper(".mySwiper4", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+const recentlyAddedGrid2 = document.querySelectorAll(".recently-add-grid-2");
+
+const recentlyAddedGrid2Array = Array.from(recentlyAddedGrid2);
+
+recentlyAddedGrid2Array.forEach(recentlyAddedGrid2Items => {
+  recentlyAddedGrid2Items.innerHTML += `
+     <div class="recently-add-grid-items-pic" style="background-image : ${trendingCoursesDetails[recentlyAddedGrid2Array.indexOf(recentlyAddedGrid2Items)][0]} ;">
+                                    <b>${trendingCoursesDetails[recentlyAddedGrid2Array.indexOf(recentlyAddedGrid2Items)][2]}</b>
+                                </div>
+                                <div class="recently-add-grid-items-desc">
+                                    <p>${trendingCoursesDetails[recentlyAddedGrid2Array.indexOf(recentlyAddedGrid2Items)][3]}</p>
+                                    <small>Review</small>
+                                    <span>
+                                    <i class="${trendingCoursesDetails[recentlyAddedGrid2Array.indexOf(recentlyAddedGrid2Items)][4]}"></i>
+                                    <i class="${trendingCoursesDetails[recentlyAddedGrid2Array.indexOf(recentlyAddedGrid2Items)][5]}"></i>
+                                    <i class="${trendingCoursesDetails[recentlyAddedGrid2Array.indexOf(recentlyAddedGrid2Items)][6]}"></i>
+                                    <i class="${trendingCoursesDetails[recentlyAddedGrid2Array.indexOf(recentlyAddedGrid2Items)][7]}"></i>
+                                    <i class="${trendingCoursesDetails[recentlyAddedGrid2Array.indexOf(recentlyAddedGrid2Items)][8]}"></i>
+                                    ${trendingCoursesDetails[recentlyAddedGrid2Array.indexOf(recentlyAddedGrid2Items)][9]}${trendingCoursesDetails[recentlyAddedGrid2Array.indexOf(recentlyAddedGrid2Items)][10]}
+                                    </span>
+                                </div>`
+})
+
+const recentlyAddedGrid2Hover = Array.from(document.querySelectorAll(".recently-add-grid-2-hover"));
+
+recentlyAddedGrid2Hover.forEach(recentlyAddedGrid2HoverItem => {
+
+  recentlyAddedGrid2HoverItem.innerHTML = `<i><small>next batch</small></i>
+  <span>${trendingCoursesDetails[recentlyAddedGrid2Hover.indexOf(recentlyAddedGrid2HoverItem)][11]}</span>
+  <i><small>what will I learn?</small></i>
+  <ul>
+      <li>${trendingCoursesDetails[recentlyAddedGrid2Hover.indexOf(recentlyAddedGrid2HoverItem)][12]}</li>
+      <li>${trendingCoursesDetails[recentlyAddedGrid2Hover.indexOf(recentlyAddedGrid2HoverItem)][13]}</li>
+      <li>${trendingCoursesDetails[recentlyAddedGrid2Hover.indexOf(recentlyAddedGrid2HoverItem)][14]}</li>
+  </ul>
+  <button>View Details</button>`
+
+})
+
+
+const discoverCat = Array.from(document.querySelectorAll(".discover-cat-item"));
+
+discoverCat.forEach(discoverCatItem => {
+  discoverCatItem.innerHTML = `<a href="">
+  <i style="color: ${trendingCoursesDetails[discoverCat.indexOf(discoverCatItem)][15]};" class="${trendingCoursesDetails[discoverCat.indexOf(discoverCatItem)][1]}"></i>
+  <small>${categoriesItems[discoverCat.indexOf(discoverCatItem)]}</small>
+</a>`
+})

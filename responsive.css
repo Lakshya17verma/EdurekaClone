@@ -7,8 +7,17 @@
     .swiper-slide {
         width: 75%;
     }
-    .grid-2{
+
+    .grid-2 {
         width: 90%;
+    }
+
+    .mySwiper4 .swiper-slide {
+        width: 99%;
+    }
+
+    .discover-cat-container {
+        grid-template-columns: repeat(6, 140px);
     }
 }
 
@@ -64,12 +73,18 @@
     .trending-nav-con>.trending-courses-nav>li:nth-last-child(even) {
         display: none;
     }
-   .grid-4-hover{
-    padding: 0.5rem;
-   }
-   .grid-2{
-    width: 100%;
-}
+
+    .grid-4-hover {
+        padding: 0.5rem;
+    }
+
+    .grid-2 {
+        width: 100%;
+    }
+
+    .discover-cat-container {
+        grid-template-columns: repeat(5, 140px);
+    }
 }
 
 /* media query for mobile resposive design */
@@ -205,40 +220,76 @@
     .course-desc-details>small {
         display: none;
     }
-    .grid-4:hover .grid-4-hover{
+
+    .grid-4:hover .grid-4-hover {
         display: none;
     }
-    .all-cat{
-        & a{
+
+    .all-cat {
+        & a {
             width: 200px;
         }
-        & i{
+
+        & i {
             font-size: 1rem;
         }
     }
-    .grid-2{
+
+    .grid-2 {
         flex-direction: column;
     }
-    .grid2-child{
+
+    .grid2-child {
         width: 99%;
         flex-direction: row;
     }
-    .grid2-child-img{
+
+    .grid2-child-img {
         justify-content: center;
         align-items: center;
         width: 18%;
     }
-    .grid2-child-desc{
+
+    .grid2-child-desc {
         gap: 5px;
         width: 78%;
     }
-    .grid2-child-desc > small{
+
+    .grid2-child-desc>small {
         margin: 0;
     }
-    .grid2-child-img > span{
+
+    .grid2-child-img>span {
         display: none;
     }
-    .grid2-child:hover .grid-2-hover{
+
+    .grid2-child:hover .grid-2-hover {
         display: none;
+    }
+
+    .mySwiper4 .swiper-slide {
+        flex-direction: column;
+    }
+
+    .recently-add-grid-2 {
+        width: 100%;
+    }
+
+    .recently-add-grid-items-pic {
+        display: none;
+    }
+
+    .recently-add-grid-2:hover .recently-add-grid-2-hover {
+        display: none;
+    }
+
+    .discover-cat-container {
+        grid-template-columns: repeat(1, 98%);
+    }
+
+    .discover-cat-item>a {
+        flex-direction: row;
+        min-height: 35px;
+        justify-content: start;
     }
 }
