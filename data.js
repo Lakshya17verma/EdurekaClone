@@ -638,3 +638,106 @@ const trendingCoursesDetails = [
         "reat time projects etc."
     ],
 ]
+
+
+const reviewDetails = [
+            anurag = [
+                "a",
+                "rgb(247, 239, 8)",
+                "anurag sen ",
+                "fa-brands fa-linkedin",
+                "#0A66C2",
+                "student",
+                "full stack web developer internship program",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star-half-stroke",
+                "I highly recommend Edureka for anyone seeking a top-notch learning experience. The platform offers a seamless online environment with knowledgeable  instructors who make complex concepts easy to understand. The up-to-date course content,",
+                " hands-on assignments, and real-world projects allowed me to apply my learning effectively. The flexibility and support provided by Edureka were outstanding, and the interactive community added value to my journey. Overall, Edureka surpassed my expectations and provided an exceptional learning experience."
+            ],
+            ayushi = [
+                "a",
+                "lightblue",
+                "ayushi sahu ",
+                "fa-brands fa-square-github",
+                "black",
+                "data analyst",
+                "informatica certification training course",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-haf-stroke",
+                "Edureka is amazing, in my course Informatica I could download the software and was confused  at several parts but I got proper assistance from Ravi, he was very patient and helped me through out the installation process which basically took 2 hour. ",
+
+                "You can imagine the amount of patience needed to stay connected the whole time, being attentive of the client's and working from scratch to fix everything. He also answered various questions regarding my course expectation and explained each step of installation process. So far my experience with Ravi and Edureka has been amazing."
+            ],
+            joe = [
+                "J",
+                "grey",
+                "Joe frixon ",
+                "fa-brands fa-linkedin",
+                "#0A66C2",
+                "multi cloud engeneer",
+                "post graduate program in DevOps",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "Edureka is a well-known e-learning platform that offers a range of courses, including advance level. Throughout the program, I gained extensive knowledge and honed my skills",
+
+                "  significantly. The mentor provided excellent guidance, addressing every small doubt and delivering classes in an effective manner. Overall, it was a great learning platform for anyone seeking to enhance their expertise. However, I would suggest improving response time for raised tickets."
+            ],
+            rasha = [
+                "r",
+                "pink",
+                "rasha jamsheer ",
+                "fa-brands fa-linkedin",
+                "#0A66C2",
+                "student",
+                "chatGPT4 complete course: begining to advance",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-regular fa-star",
+                "I recently completed Edureka's certified course on Chat GPT, ranging from Beginner to Advance DevOps training. The DevOps course covers  and Configuration Management, among others. The course is well-structured in collaboration with Purdue University, with each concept explained clearly and concisely One of the standout",
+               "  features of Edureka DevOps training is the availability of hands-on exercises and projects. These provide learners with an opportunity to apply the concepts they have learned practically, which is crucial in mastering the subject. Despite its strengths, there are a few areas where Edureka DevOps training could be improved. Some beginners may find the course overwhelming, and some learners may struggle to keep up with its pace. Additionally, the instructors could have used real-world examples to help illustrate the concepts. To make the most of the course, learners should make wise use of the feedback mechanism after each class. This will enable Edureka to evaluate the classses progress, allowing the instructors to adjust their pace accordingly. It is also recommended that the course provide access to a community of learners, where students can share experiences, ask questions, and receive support from fellow learners and instructors"
+            ],
+            anurag = [
+                "a",
+                "rgb(247, 239, 8)",
+                "anurag sen ",
+                "fa-brands fa-linkedin",
+                "#0A66C2",
+                "student",
+                "full stack web developer internship program",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star-half-stroke",
+                "I highly recommend Edureka for anyone seeking a top-notch learning experience. The platform offers a seamless online  environment with knowledgeable instructors who make complex concepts easy to understand.",
+                " The up-to-date course content, hands-on assignments, and real-world projects allowed me to apply my learning effectively. The flexibility and support provided by Edureka were outstanding, and the interactive community added value to my journey. Overall, Edureka surpassed my expectations and provided an exceptional learning experience."
+            ],
+            ayushi = [
+                "a",
+                "lightblue",
+                "ayushi sahu ",
+                "fa-brands fa-square-github",
+                "black",
+                "data analyst",
+                "informatica certification training course",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-color",
+                "fa-solid fa-star star-haf-stroke",
+                "Edureka is amazing, in my course Informatica I could download the software and was confused  at several parts but I got proper assistance from Ravi, he was very patient and helped  me through out the installation process which basically took 2 hour. You can imagine the amount",
+
+                " of patience needed to stay connected the whole time, being attentive of the client's and working from scratch to fix everything. He also answered various questions regarding my course expectation and explained each step of installation process. So far my experience with Ravi and Edureka has been amazing."
+            ],
+]

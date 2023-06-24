@@ -85,6 +85,9 @@
     .discover-cat-container {
         grid-template-columns: repeat(5, 140px);
     }
+    .mySwiper5 .swiper-slide {
+        width: 49%;
+    }
 }
 
 /* media query for mobile resposive design */
@@ -291,5 +294,8 @@
         flex-direction: row;
         min-height: 35px;
         justify-content: start;
+    }
+    .mySwiper5 .swiper-slide {
+        width: 90%;
     }
 }

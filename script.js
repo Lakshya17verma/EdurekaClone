@@ -352,3 +352,49 @@ discoverCat.forEach(discoverCatItem => {
   <small>${categoriesItems[discoverCat.indexOf(discoverCatItem)]}</small>
 </a>`
 })
+
+
+// reveiw section script
+var swiper = new Swiper(".mySwiper5", {
+  slidesPerView: "auto",
+  spaceBetween: 10,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+const review = Array.from(document.querySelectorAll(".review-con"));
+
+review.forEach(reviewItems => {
+  reviewItems.innerHTML = `<div class="dflex review-pic-con">
+  <b class="dflex" style="background-color:${reviewDetails[review.indexOf(reviewItems)][1]};">${reviewDetails[review.indexOf(reviewItems)][0]}</b>
+  <span class="dflex title">
+      <h3>${reviewDetails[review.indexOf(reviewItems)][2]}<a href=""><i class="${reviewDetails[review.indexOf(reviewItems)][3]}" style="color:${reviewDetails[review.indexOf(reviewItems)][4]};"></i></a></h3>
+      <small>${reviewDetails[review.indexOf(reviewItems)][5]}</small>
+  </span>
+</div>
+<div class="taken-course">
+  <small>${reviewDetails[review.indexOf(reviewItems)][6]}</small>
+  <span>
+      <i class="${reviewDetails[review.indexOf(reviewItems)][7]}"></i>
+      <i class="${reviewDetails[review.indexOf(reviewItems)][8]}"></i>
+      <i class="${reviewDetails[review.indexOf(reviewItems)][9]}"></i>
+      <i class="${reviewDetails[review.indexOf(reviewItems)][10]}"></i>
+      <i class="${reviewDetails[review.indexOf(reviewItems)][11]}"></i>
+  </span>
+</div>
+<div class="review-para">
+  <i>${reviewDetails[review.indexOf(reviewItems)][12]}<span class="review-para-content"><i></i>${reviewDetails[review.indexOf(reviewItems)][13]}.</i></span>
+  </i>
+  <button>Read More</button>
+</div>
+`
+})
+
+// const para = document.querySelector(".review-para");
+// const paraContent = document.querySelector(".review-para-content");
+// const showFullReviewBtn = (para,paraContent) => {
+//   para.classList.toggle("overflowY");
+//   paraContent.classList.toggle("show");
+// }

@@ -44,6 +44,7 @@ a {
 button {
     border: none;
     outline: none;
+    cursor: pointer;
 }
 
 /* reusable code blocks */
@@ -898,22 +899,22 @@ li:visited li:active {
     text-align: center;
     padding: 10px;
 
-    & a {
-        width: 250px;
-        margin: 10px auto;
-        padding: 0.5rem 1rem;
-        color: white;
-        font-size: 1rem;
-        cursor: pointer;
-        border-radius: 2px;
-        background: linear-gradient(to right, #3895E6, #384FE6);
-    }
-
     & i {
         font-size: 1.2rem;
         font-weight: 200;
         color: #404040;
     }
+}
+
+.all-cat>a {
+    width: 250px;
+    margin: 10px auto;
+    padding: 0.5rem 1rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 2px;
+    background: linear-gradient(to right, #3895E6, #384FE6);
 }
 
 /* trending courses section ends here */
@@ -1085,7 +1086,7 @@ li:visited li:active {
     display: flex;
     gap: 10px;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: column;
     background-color: white;
     box-shadow: 0 4px 15px 1px rgba(0, 0, 0, 0.15);
@@ -1114,3 +1115,89 @@ li:visited li:active {
 }
 
 /* discover top categories section ends here */
+
+/* review section starts here */
+.mySwiper5 .swiper-slide {
+    width: 31.5%;
+    padding: 0.8rem;
+}
+
+.review-con {
+    position: relative;
+    text-transform: capitalize;
+    width: 100%;
+    padding: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);
+}
+
+.review-pic-con {
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.review-pic-con>b {
+    font-size: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+
+.review-pic-con .title {
+    align-items: start;
+    flex-direction: column;
+}
+
+.title small {
+    font-size: smaller;
+    color: grey;
+}
+
+.taken-course {
+    display: flex;
+    flex-direction: column;
+}
+
+.taken-course i {
+    color: orange;
+}
+
+.taken-course small {
+    font-size: 12px;
+    font-weight: 600;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.review-para {
+    min-height: 100px;
+    max-height: 100px;
+    font-size: 14px;
+    line-height: 1.5rem;
+    cursor: pointer;
+    overflow-y: hidden;
+}
+.overflowY{
+    overflow-y: scroll;
+}
+.review-para .review-para-content {
+    display: none;
+}
+
+.review-para button {
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+    color: #0A66C2;
+    background: white;
+}
+
+/* review section ends here */
