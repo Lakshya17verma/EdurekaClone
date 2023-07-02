@@ -171,7 +171,7 @@ const catItemDetailsCard = [
         "master program", "./homepage-img/master-program.png", "business intelligence master program", "14", "250", "41k"
     ],
     CyberSecurity = [
-        "master program", "./homepage-img/master-program.png", "cyber security master program", "5", "100", "6k"
+        "master program", "./homepage-img/master-program-2.png", "cyber security master program", "5", "100", "6k"
     ],
     datascience = [
         "master program", "./homepage-img/master-program.png", "data analytics master program", "8", "270", "61k"
@@ -180,7 +180,7 @@ const catItemDetailsCard = [
         "master program", "./homepage-img/master-program.png", "full stack web developer master program course", "7", "80", "11k"
     ],
     ProjectManagementMethodology = [
-        "master program", "./homepage-img/master-program.png", "PMP® Certification Training Course", "7", "140", "13k"
+        "master program", "./homepage-img/master-program-2.png", "PMP® Certification Training Course", "7", "140", "13k"
     ],
     softwareTesting = [
         "master program", "./homepage-img/master-program.png", "Selenium Certification Training Course", "5", "80", "1k"
@@ -189,7 +189,7 @@ const catItemDetailsCard = [
         "master program", "./homepage-img/master-program.png", "Big Data Hadoop Certification Training Course", "2", "20", "1k"
     ],
     artificialIntelligence = [
-        "master program", "./homepage-img/master-program.png", "Artificial Intelligence Certification Course", "12", "250", "31k"
+        "master program", "./homepage-img/master-program-2.png", "Artificial Intelligence Certification Course", "12", "250", "31k"
     ],
     frontendDevelopment = [
         "master program", "./homepage-img/master-program.png", "React JS Certification Training Course", "12", "250", "31k"
@@ -198,7 +198,7 @@ const catItemDetailsCard = [
         "master program", "./homepage-img/master-program.png", "Microsoft SQL Server Certification Course", "12", "250", "31k"
     ],
     roboticsProcessAutomation = [
-        "master program", "./homepage-img/master-program.png", "RPA using UiPath Certification Training", "12", "250", "31k"
+        "master program", "./homepage-img/master-program-2.png", "RPA using UiPath Certification Training", "12", "250", "31k"
     ],
     dataWarehousingAndETL = [
         "master program", "./homepage-img/master-program.png", "Informatica Certification Training Course", "12", "250", "31k"
@@ -217,7 +217,7 @@ const catItemDetailsCard = [
         "master program", "./homepage-img/master-program.png", "design patterns certification training", "12", "250", "31k"
     ],
     blockchain = [
-        "master program", "./homepage-img/master-program.png", "blockchain developer certification training", "12", "250", "31k"
+        "master program", "./homepage-img/master-program-2.png", "blockchain developer certification training", "12", "250", "31k"
     ]
 ]
 
@@ -641,103 +641,210 @@ const trendingCoursesDetails = [
 
 
 const reviewDetails = [
-            anurag = [
-                "a",
-                "rgb(247, 239, 8)",
-                "anurag sen ",
-                "fa-brands fa-linkedin",
-                "#0A66C2",
-                "student",
-                "full stack web developer internship program",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star-half-stroke",
-                "I highly recommend Edureka for anyone seeking a top-notch learning experience. The platform offers a seamless online environment with knowledgeable  instructors who make complex concepts easy to understand. The up-to-date course content,",
-                " hands-on assignments, and real-world projects allowed me to apply my learning effectively. The flexibility and support provided by Edureka were outstanding, and the interactive community added value to my journey. Overall, Edureka surpassed my expectations and provided an exceptional learning experience."
-            ],
-            ayushi = [
-                "a",
-                "lightblue",
-                "ayushi sahu ",
-                "fa-brands fa-square-github",
-                "black",
-                "data analyst",
-                "informatica certification training course",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-haf-stroke",
-                "Edureka is amazing, in my course Informatica I could download the software and was confused  at several parts but I got proper assistance from Ravi, he was very patient and helped me through out the installation process which basically took 2 hour. ",
+    anurag = [
+        "a",
+        "rgb(247, 239, 8)",
+        "anurag sen ",
+        "fa-brands fa-linkedin",
+        "#0A66C2",
+        "student",
+        "full stack web developer internship program",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star-half-stroke",
+        "I highly recommend Edureka for anyone seeking a top-notch learning experience. The platform offers a seamless online environment with knowledgeable  instructors who make complex concepts easy to understand. The up-to-date course content,",
+        " hands-on assignments, and real-world projects allowed me to apply my learning effectively. The flexibility and support provided by Edureka were outstanding, and the interactive community added value to my journey. Overall, Edureka surpassed my expectations and provided an exceptional learning experience."
+    ],
+    ayushi = [
+        "a",
+        "lightblue",
+        "ayushi sahu ",
+        "fa-brands fa-square-github",
+        "black",
+        "data analyst",
+        "informatica certification training course",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-haf-stroke",
+        "Edureka is amazing, in my course Informatica I could download the software and was confused  at several parts but I got proper assistance from Ravi, he was very patient and helped me through out the installation process which basically took 2 hour. ",
 
-                "You can imagine the amount of patience needed to stay connected the whole time, being attentive of the client's and working from scratch to fix everything. He also answered various questions regarding my course expectation and explained each step of installation process. So far my experience with Ravi and Edureka has been amazing."
-            ],
-            joe = [
-                "J",
-                "grey",
-                "Joe frixon ",
-                "fa-brands fa-linkedin",
-                "#0A66C2",
-                "multi cloud engeneer",
-                "post graduate program in DevOps",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "Edureka is a well-known e-learning platform that offers a range of courses, including advance level. Throughout the program, I gained extensive knowledge and honed my skills",
+        "You can imagine the amount of patience needed to stay connected the whole time, being attentive of the client's and working from scratch to fix everything. He also answered various questions regarding my course expectation and explained each step of installation process. So far my experience with Ravi and Edureka has been amazing."
+    ],
+    joe = [
+        "J",
+        "grey",
+        "Joe frixon ",
+        "fa-brands fa-linkedin",
+        "#0A66C2",
+        "multi cloud engeneer",
+        "post graduate program in DevOps",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "Edureka is a well-known e-learning platform that offers a range of courses, including advance level. Throughout the program, I gained extensive knowledge and honed my skills",
 
-                "  significantly. The mentor provided excellent guidance, addressing every small doubt and delivering classes in an effective manner. Overall, it was a great learning platform for anyone seeking to enhance their expertise. However, I would suggest improving response time for raised tickets."
-            ],
-            rasha = [
-                "r",
-                "pink",
-                "rasha jamsheer ",
-                "fa-brands fa-linkedin",
-                "#0A66C2",
-                "student",
-                "chatGPT4 complete course: begining to advance",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-regular fa-star",
-                "I recently completed Edureka's certified course on Chat GPT, ranging from Beginner to Advance DevOps training. The DevOps course covers  and Configuration Management, among others. The course is well-structured in collaboration with Purdue University, with each concept explained clearly and concisely One of the standout",
-               "  features of Edureka DevOps training is the availability of hands-on exercises and projects. These provide learners with an opportunity to apply the concepts they have learned practically, which is crucial in mastering the subject. Despite its strengths, there are a few areas where Edureka DevOps training could be improved. Some beginners may find the course overwhelming, and some learners may struggle to keep up with its pace. Additionally, the instructors could have used real-world examples to help illustrate the concepts. To make the most of the course, learners should make wise use of the feedback mechanism after each class. This will enable Edureka to evaluate the classses progress, allowing the instructors to adjust their pace accordingly. It is also recommended that the course provide access to a community of learners, where students can share experiences, ask questions, and receive support from fellow learners and instructors"
-            ],
-            anurag = [
-                "a",
-                "rgb(247, 239, 8)",
-                "anurag sen ",
-                "fa-brands fa-linkedin",
-                "#0A66C2",
-                "student",
-                "full stack web developer internship program",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star-half-stroke",
-                "I highly recommend Edureka for anyone seeking a top-notch learning experience. The platform offers a seamless online  environment with knowledgeable instructors who make complex concepts easy to understand.",
-                " The up-to-date course content, hands-on assignments, and real-world projects allowed me to apply my learning effectively. The flexibility and support provided by Edureka were outstanding, and the interactive community added value to my journey. Overall, Edureka surpassed my expectations and provided an exceptional learning experience."
-            ],
-            ayushi = [
-                "a",
-                "lightblue",
-                "ayushi sahu ",
-                "fa-brands fa-square-github",
-                "black",
-                "data analyst",
-                "informatica certification training course",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-color",
-                "fa-solid fa-star star-haf-stroke",
-                "Edureka is amazing, in my course Informatica I could download the software and was confused  at several parts but I got proper assistance from Ravi, he was very patient and helped  me through out the installation process which basically took 2 hour. You can imagine the amount",
+        "  significantly. The mentor provided excellent guidance, addressing every small doubt and delivering classes in an effective manner. Overall, it was a great learning platform for anyone seeking to enhance their expertise. However, I would suggest improving response time for raised tickets."
+    ],
+    rasha = [
+        "r",
+        "pink",
+        "rasha jamsheer ",
+        "fa-brands fa-linkedin",
+        "#0A66C2",
+        "student",
+        "chatGPT4 complete course: begining to advance",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-regular fa-star",
+        "I recently completed Edureka's certified course on Chat GPT, ranging from Beginner to Advance DevOps training. The DevOps course covers  and Configuration Management, among others. The course is well-structured in collaboration with Purdue University, with each concept explained clearly and concisely One of the standout",
+        "  features of Edureka DevOps training is the availability of hands-on exercises and projects. These provide learners with an opportunity to apply the concepts they have learned practically, which is crucial in mastering the subject. Despite its strengths, there are a few areas where Edureka DevOps training could be improved. Some beginners may find the course overwhelming, and some learners may struggle to keep up with its pace. Additionally, the instructors could have used real-world examples to help illustrate the concepts. To make the most of the course, learners should make wise use of the feedback mechanism after each class. This will enable Edureka to evaluate the classses progress, allowing the instructors to adjust their pace accordingly. It is also recommended that the course provide access to a community of learners, where students can share experiences, ask questions, and receive support from fellow learners and instructors"
+    ],
+    anurag = [
+        "a",
+        "rgb(247, 239, 8)",
+        "anurag sen ",
+        "fa-brands fa-linkedin",
+        "#0A66C2",
+        "student",
+        "full stack web developer internship program",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star-half-stroke",
+        "I highly recommend Edureka for anyone seeking a top-notch learning experience. The platform offers a seamless online  environment with knowledgeable instructors who make complex concepts easy to understand.",
+        " The up-to-date course content, hands-on assignments, and real-world projects allowed me to apply my learning effectively. The flexibility and support provided by Edureka were outstanding, and the interactive community added value to my journey. Overall, Edureka surpassed my expectations and provided an exceptional learning experience."
+    ],
+    ayushi = [
+        "a",
+        "lightblue",
+        "ayushi sahu ",
+        "fa-brands fa-square-github",
+        "black",
+        "data analyst",
+        "informatica certification training course",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-color",
+        "fa-solid fa-star star-haf-stroke",
+        "Edureka is amazing, in my course Informatica I could download the software and was confused  at several parts but I got proper assistance from Ravi, he was very patient and helped  me through out the installation process which basically took 2 hour. You can imagine the amount",
 
-                " of patience needed to stay connected the whole time, being attentive of the client's and working from scratch to fix everything. He also answered various questions regarding my course expectation and explained each step of installation process. So far my experience with Ravi and Edureka has been amazing."
-            ],
+        " of patience needed to stay connected the whole time, being attentive of the client's and working from scratch to fix everything. He also answered various questions regarding my course expectation and explained each step of installation process. So far my experience with Ravi and Edureka has been amazing."
+    ],
+]
+
+const blogDetails = [
+    {
+        blogImg: "./homepage-img/blog-img1.jpg",
+        releaseDate: "may 1st",
+        blogHeading: "Top 120+ DevOps Interview Questions And Answers for 2023"
+    },
+    {
+        blogImg: "./homepage-img/blog-img2.png",
+        releaseDate: "march 14th",
+        blogHeading: "Top Core Java Interview Questions for Freshers and Experienced in 2023"
+    },
+    {
+        blogImg: "./homepage-img/blog-img3.png",
+        releaseDate: "january 9th",
+        blogHeading: "Setting Up A Multi Node Cluster In Hadoop 2.X"
+    },
+    {
+        blogImg: "./homepage-img/blog-img4.jpg",
+        releaseDate: "december 10th",
+        blogHeading: "Top 100+ AWS Interview Questions and Answers for 2023"
+    },
+    {
+        blogImg: "./homepage-img/blog-img5.png",
+        releaseDate: "april 23rd",
+        blogHeading: "Top 100+ Python Interview Questions You Must Prepare In 2023"
+    },
+    {
+        blogImg: "./homepage-img/blog-img6.png",
+        releaseDate: "september 19th",
+        blogHeading: "10 Reasons Why Big Data Analytics is the Best Career Move"
+    },
+    {
+        blogImg: "./homepage-img/blog-img7.png",
+        releaseDate: "july 2nd",
+        blogHeading: "What is AWS Certification: Top Benefits, Various Certifications List, and More"
+    },
+    {
+        blogImg: "./homepage-img/blog-img8.png",
+        releaseDate: "february 17th",
+        blogHeading: "Top Angular Interview Questions You Must Prepare In 2023"
+    },
+    {
+        blogImg: "./homepage-img/blog-img9.jpg",
+        releaseDate: "august 9th",
+        blogHeading: "Top Tableau Interview Questions And Answers for 2023"
+    },
+    {
+        blogImg: "./homepage-img/blog-img10.png",
+        releaseDate: "october 30th",
+        blogHeading: "Top 100+ React Interview Questions You Must Prepare In 2023"
+    },
+    {
+        blogImg: "./homepage-img/blog-img11.png",
+        releaseDate: "may 14th",
+        blogHeading: "Top Hive Commands with Examples in HQL"
+    },
+    {
+        blogImg: "./homepage-img/blog-img12.png",
+        releaseDate: "january 19th",
+        blogHeading: "Top 50 Hadoop Interview Questions You Must Prepare In 2023"
+    },
+] 
+
+const footersectionData = [
+    "DevOps Certification Training Course",
+    "AWS Solutions Architect Certification Training Course",
+    "Big Data Hadoop Certification Training Course",
+    "Tableau Certification Training Course",
+    "Data Science with Python Certification Course",
+    "Selenium Certification Training Course",
+    "PMP® Certification Training Course",
+    "RPA using UiPath Certification Training",
+    "Apache Spark and Scala Certification Training Course",
+    "Microsoft Power BI Certification Training Course",
+    "Java Certification Training Course",
+    "Python Certification Training Course",
+    "Data Science Training Masters Program",
+    "DevOps Engineer Masters Program",
+    "Cloud Architect Masters Program",
+    "Big Data Architect Masters Program",
+    "AI and Machine Learning Masters Course",
+    "Full Stack Web Developer Masters Program Course",
+    "Business Intelligence Masters Program",
+    "Data Analytics Masters Program",
+    "Automation Testing Engineer Masters Program",
+    "Post Graduate Diploma in Artificial Intelligence Course",
+    "Post Graduate Program in DevOps",
+    "about us",
+    "news & media",
+    "reviews",
+    "contact us",
+    "webinar",
+    "blog",
+    "community",
+    "locations",
+    "sitemap",
+    "blog sitemap",
+    "community sitemap",
+    "city sitemap",
+    "corporate training",
+    "carrers",
+    "become an intructor",
+    "become an affiliate",
+    "become a partner",
+    "hire from edureka"
 ]

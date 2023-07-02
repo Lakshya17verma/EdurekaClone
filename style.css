@@ -5,7 +5,7 @@
     --swiper-theme-color: "white";
     --swiper-pagination-bullet-inactive-color: rgb(219, 206, 206);
     --swiper-pagination-bullet-inactive-opacity: 0.6;
-    --swiper-pagination-color: white !important;
+    --swiper-pagination-color: white;
     --swiper-pagination-bullet-opacity: 1;
 }
 
@@ -587,10 +587,6 @@ li:visited li:active {
     left: 7% !important;
 }
 
-.swiper-pagination {
-    top: 75% !important;
-}
-
 .swiper-pagination-bullet {
     color: white !important;
 }
@@ -624,9 +620,9 @@ li:visited li:active {
     justify-content: space-between;
 }
 
-.courses-3-grid>a {
+.courses-3-grid a {
     color: #0c5397;
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 12px;
     text-align: right;
     display: inline-block;
@@ -639,7 +635,7 @@ li:visited li:active {
 .trending-courses-sec {
     width: 80%;
     flex-direction: column;
-    margin: 70px auto;
+    margin: 70px auto 25px auto;
     gap: 15px;
     text-transform: capitalize;
 }
@@ -649,7 +645,6 @@ li:visited li:active {
     font-size: 1.2rem;
     color: #404040;
     font-weight: 600;
-    text-transform: uppercase;
 }
 
 .trending-nav-con {
@@ -1077,7 +1072,7 @@ li:visited li:active {
     grid-auto-flow: row;
     gap: 10px;
     justify-content: space-between;
-    margin: 15px auto;
+    margin: 16px auto;
 }
 
 .discover-cat-item>a {
@@ -1105,11 +1100,11 @@ li:visited li:active {
     font-size: 2.2rem;
 }
 
-.discover-cat>a {
+.go-to-more {
     display: block;
     text-transform: uppercase;
     text-align: center;
-    margin: 12px auto;
+    margin: 15px auto;
     color: rgb(10, 56, 88);
     font-size: 0.8rem;
 }
@@ -1185,12 +1180,11 @@ li:visited li:active {
     cursor: pointer;
     overflow-y: hidden;
 }
-.overflowY{
+
+.overflowY {
     overflow-y: scroll;
 }
-.review-para .review-para-content {
-    display: none;
-}
+
 
 .review-para button {
     position: absolute;
@@ -1201,3 +1195,389 @@ li:visited li:active {
 }
 
 /* review section ends here */
+
+/* view all courses strip starts here */
+.view-all-course-srtip {
+    background-image: linear-gradient(95deg, #64afef, #248ae4 50%, #244ee4 100%);
+    margin: 20px 0;
+    padding: 25px 20px;
+    gap: 25px;
+}
+
+.view-all-course-srtip h3 {
+    color: white;
+}
+
+.view-all-course-srtip a {
+    padding: 10px 20px;
+    width: 200px;
+    background-color: #fff;
+    border-radius: 2px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #0c5397;
+    text-align: center;
+}
+
+/* view all courses strip ends here */
+
+/* latest blog section starts here */
+.blog-container {
+    align-items: flex-start;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.pagination-color .swiper-pagination-bullet-active {
+    --swiper-pagination-color: rgb(5, 0, 0) !important;
+}
+
+.blog-grid {
+    width: 70%;
+}
+
+.blog-grid .blog-grid-3 {
+    width: 33.33%;
+}
+
+.blog-grid-3>a {
+    width: 100%;
+    flex-direction: column;
+    align-items: start;
+    gap: 8px;
+}
+
+.blog-grid-3 .blog-img {
+    max-height: 160px;
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blog-grid-3 i {
+    font-size: 13px;
+}
+
+.blog-grid-3 h4 {
+    text-transform: capitalize;
+    padding: 8px 12px;
+    font-size: 14px;
+    height: 80px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blog-show-more {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    padding-inline: 1.2rem;
+    gap: 3px;
+}
+
+.blog-show-more b {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+}
+
+.blog-show-more small {
+    color: #404040;
+    text-transform: capitalize;
+    line-height: 1.3rem;
+}
+
+.blog-show-more a {
+    text-transform: capitalize;
+    padding: 6px 1.5rem;
+    background: transparent;
+    border: 1px solid #12589a;
+    margin-top: 8px;
+    color: #12589a;
+}
+
+/* latest blog section ends here */
+
+/* edureka edge section starts here */
+.edge-4-container {
+    width: 98%;
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-content: center;
+}
+
+.edge-4-item {
+    flex-direction: column;
+    justify-content: stretch;
+    font-size: 25px;
+    gap: 8px;
+}
+
+.edge-4-item .real-time-doubt {
+    background: -webkit-linear-gradient(312deg, #30eeff 14%, #34f991 90%);
+}
+
+.edge-4-item .unlimited-access {
+    background: -webkit-linear-gradient(246deg, #243be4 14%, #e424dc 90%);
+}
+
+.edge-4-item .twentyfourX7 {
+    background: -webkit-linear-gradient(108deg, #248de4 14%, #243be4 90%);
+    font-size: 1.7em;
+    font-weight: bolder;
+}
+
+.edge-4-item .track-you {
+    background: -webkit-linear-gradient(143deg, #fad961 14%, #f76b1c 90%);
+}
+
+.edge-4-item .track-you,
+.edge-4-item .twentyfourX7,
+.edge-4-item .unlimited-access,
+.edge-4-item .real-time-doubt {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.edge-4-item>i {
+    margin: 10px auto;
+    font-style: normal;
+    font-size: 2em;
+}
+
+.edge-4-item strong {
+    font-size: 0.6em;
+}
+
+.edge-4-item small {
+    font-size: 0.6em;
+}
+
+/* edureka edge  section ends here */
+
+/* media review section starts here*/
+.mySwiper7 .swiper-wrapper {
+    padding: 1.2rem 0;
+}
+
+.media-review-con {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 10px;
+    width: 60%;
+    text-align: center;
+    font-size: 30px
+}
+
+.media-review-con i {
+    text-align: left;
+    font-size: 2em;
+    color: #243be4;
+}
+
+.media-review-con h4 {
+    font-size: 0.8em;
+}
+
+.media-review-con a {
+    color: #243be4;
+    font-size: 0.6em;
+}
+
+.media-review-con img {
+    height: 70px;
+    width: auto;
+    margin-inline: auto;
+}
+
+/* media review section ends here*/
+
+/* edureka business banner section starts here */
+.business-banner-section {
+    margin: 1rem 0 0 0;
+    width: 100%;
+    background-image: url("./homepage-img/business-banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.business-banner-section .business-banner-content {
+    margin-inline: auto;
+    padding: 3rem;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    text-transform: capitalize;
+    gap: 5px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.business-banner-section img {
+    width: 250px;
+    margin: 10px auto 0 auto;
+}
+
+.business-banner-section h3 {
+    font-size: 0.7em;
+}
+
+.business-banner-section p {
+    font-size: 0.5em;
+    font-weight: 800;
+}
+
+.business-banner-section button {
+    color: #12589a;
+    font-size: 0.5em;
+    background-color: white;
+    margin: 0.8rem auto;
+    width: 180px;
+    border-radius: 2px;
+    padding: 10px 1rem;
+}
+
+/* edureka business banner section ends here */
+
+/* our corporate clients section starts here */
+.corporate-clients {
+    background: #Ffff;
+    padding: 1.4rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.corporate-clients ul {
+    width: 90%;
+    margin: 10px auto;
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.corporate-clients ul li {
+    margin-inline: auto;
+}
+
+.corporate-clients li img {
+    width: 80%;
+    margin-inline: auto;
+}
+
+/* our corporate clients section ends here */
+
+/* footer section starts here */
+.footer-section {
+    width: 75%;
+    margin: 1.3rem auto;
+}
+
+.footer-section a {
+    font-size: 13px;
+    color: #333;
+    text-transform: capitalize;
+}
+
+.footer-section h3 {
+    margin: 0 0 8px 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bolder;
+}
+
+.footer-section .verdana-logo,
+.footer-section img {
+    max-width: 130px;
+}
+
+.footer-details-con {
+    margin: 1rem 0;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.footer-colunm-4 {
+    width: auto;
+}
+
+.footer-colunm-4 ul li {
+    padding: 5px 0;
+}
+
+.footer-section>button {
+    width: 100%;
+    justify-content: space-between;
+    font-size: 1rem;
+    padding: 1rem 0;
+    background: transparent;
+}
+
+.footer-section>button i {
+    font-size: 1.3rem;
+    visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.btn-rotate {
+    transform: rotate(-180deg);
+    transition: all 0.5s;
+}
+
+.footer-cat-con ul {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.footer-cat-con ul li {
+    padding-right: 8px;
+    border-right: 1px solid gray;
+}
+
+.copyright-and-media {
+    justify-content: start;
+    margin: 1rem auto;
+    gap: 25px;
+    font-size: 13px;
+    flex-wrap: wrap;
+}
+.copyright-and-media span{
+    gap: 1rem;
+}
+.copyright-and-media span i {
+    font-size: 1.3rem;
+}
+
+/* footer section ends here */
+.footnote{
+    padding: 1.8rem 0;
+    text-align: center;
+    font-size: 12px;
+    word-spacing: 3px;
+    font-weight: bold;
+    color: #2a2929;
+    background-color: white;
+}

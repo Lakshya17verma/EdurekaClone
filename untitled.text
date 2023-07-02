@@ -22,3 +22,11 @@
                             </i>
                             <button>read more</button>
                         </div>
+
+
+---------------------------------------
+ <figure>
+                                <img src="./homepage-img/blog-img1.jpg" alt="">
+                                <figcaption>may 1st</figcaption>
+                            </figure>
+                            <h4>Top 120+ DevOps Interview Questions And Answers for 2023</h4>

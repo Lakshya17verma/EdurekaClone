@@ -127,10 +127,10 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  autoplay: {
-    delay: 3000,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 3000,
+  //   disableOnInteraction: false,
+  // },
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
@@ -390,11 +390,65 @@ review.forEach(reviewItems => {
   <button>Read More</button>
 </div>
 `
+  const reviewPara = reviewItems.querySelector(".review-para");
+  reviewPara.addEventListener("click", () => {
+    reviewPara.classList.toggle("overflowY")
+  })
+
 })
 
-// const para = document.querySelector(".review-para");
-// const paraContent = document.querySelector(".review-para-content");
-// const showFullReviewBtn = (para,paraContent) => {
-//   para.classList.toggle("overflowY");
-//   paraContent.classList.toggle("show");
-// }
+// latest blog section
+var swiper = new Swiper(".mySwiper6", {
+  slidesPerView: "auto",
+  spaceBetween: 10,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+//blog post starts here
+
+const blogGrid3 = Array.from(document.querySelectorAll(".blog-grid-3"));
+blogGrid3.forEach(blogGrid3Items => {
+  blogGrid3Items.innerHTML = ` <a href="" class="dflex">
+  <img class="blog-img" src="${blogDetails[blogGrid3.indexOf(blogGrid3Items)].blogImg}" loading="lazy"/> 
+    <i>${blogDetails[blogGrid3.indexOf(blogGrid3Items)].releaseDate}</i>
+  <h4>${blogDetails[blogGrid3.indexOf(blogGrid3Items)].blogHeading}</h4></a>`
+})
+
+var swiper = new Swiper(".mySwiper7", {
+  slidesPerView: "1",
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+
+const footerColumns = Array.from(document.querySelectorAll(".footer-colunm-4 li"));
+
+footerColumns.forEach(footerColumnItems => {
+  footerColumnItems.innerHTML = `<a href="">${footersectionData[footerColumns.indexOf(footerColumnItems)]}</a>` 
+});
+
+const footerCat = Array.from(document.querySelectorAll(".footer-cat-con li"));
+
+footerCat.forEach(footerCatItems => {
+  footerCatItems.innerHTML = `<a href="">${categoriesItems[footerCat.indexOf(footerCatItems)]}</a>` 
+})
+
+
+function showFooterCat(){
+  let footerWidth = window.matchMedia("(max-width: 800px)")
+  if (footerWidth.matches) {
+   document.querySelector(".footer-cat-con").classList.toggle("show");
+   document.querySelector(".footer-section > button i").classList.toggle("btn-rotate");
+}}
