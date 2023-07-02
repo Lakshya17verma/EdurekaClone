@@ -436,19 +436,48 @@ var swiper = new Swiper(".mySwiper7", {
 const footerColumns = Array.from(document.querySelectorAll(".footer-colunm-4 li"));
 
 footerColumns.forEach(footerColumnItems => {
-  footerColumnItems.innerHTML = `<a href="">${footersectionData[footerColumns.indexOf(footerColumnItems)]}</a>` 
+  footerColumnItems.innerHTML = `<a href="">${footersectionData[footerColumns.indexOf(footerColumnItems)]}</a>`
 });
 
 const footerCat = Array.from(document.querySelectorAll(".footer-cat-con li"));
 
 footerCat.forEach(footerCatItems => {
-  footerCatItems.innerHTML = `<a href="">${categoriesItems[footerCat.indexOf(footerCatItems)]}</a>` 
+  footerCatItems.innerHTML = `<a href="">${categoriesItems[footerCat.indexOf(footerCatItems)]}</a>`
 })
 
 
-function showFooterCat(){
+function showFooterCat() {
   let footerWidth = window.matchMedia("(max-width: 800px)")
   if (footerWidth.matches) {
-   document.querySelector(".footer-cat-con").classList.toggle("show");
-   document.querySelector(".footer-section > button i").classList.toggle("btn-rotate");
-}}
+    document.querySelector(".footer-cat-con").classList.toggle("show");
+    document.querySelector(".footer-section > button i").classList.toggle("btn-rotate");
+  }
+}
+
+const contactBoxHead = document.querySelector(".box-head");
+const contactBoxBody = document.querySelector(".contact-box-body");
+contactBoxHead.addEventListener("click", () => {
+  contactBoxBody.classList.toggle("contact-body-height");
+  document.querySelector(".box-head i").classList.toggle("btn-rotate");
+})
+
+const goToTop = document.querySelector(".scroll-to-top");
+window.addEventListener("scroll" , () =>{
+  if(window.scrollY > 3600 ){
+    goToTop.classList.add("scroll-active")
+  }
+  else{
+    goToTop.classList.remove("scroll-active")
+  }
+})
+
+const loginSignupSection = document.querySelector(".login-signup-section");
+
+function deleteForm(){
+  loginSignupSection.style.display = "none";
+  contactBoxBody.classList.toggle("contact-body-height");
+  document.querySelector(".box-head i").classList.toggle("btn-rotate");
+}
+
+
+// regex for login form

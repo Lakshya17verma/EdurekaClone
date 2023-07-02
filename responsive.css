@@ -397,6 +397,15 @@
         padding: 1.2rem 0;
         font-size: 11px;
     }
+    .contact-us-box{
+        display: none;
+    }
+    .call-us-float{
+        display: flex;
+    }
+    .scroll-to-top , .scroll-active{
+        display: none;
+    }
 }
 
 @media (max-width:600px) {
@@ -418,5 +427,8 @@
 
     .corporate-clients ul {
         grid-template-columns: repeat(2, 1fr);
+    }
+    .form-container{
+        width: 90%;
     }
 }
