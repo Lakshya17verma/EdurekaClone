@@ -400,12 +400,17 @@
     .contact-us-box{
         display: none;
     }
-    .call-us-float{
+
+    .call-us-float.call-us-active {
         display: flex;
+        pointer-events: auto;
+        transition: all 0.5s;
+        opacity: 1;
     }
     .scroll-to-top , .scroll-active{
         display: none;
     }
+
 }
 
 @media (max-width:600px) {
@@ -429,6 +434,6 @@
         grid-template-columns: repeat(2, 1fr);
     }
     .form-container{
-        width: 90%;
+        width: 97%;
     }
 }

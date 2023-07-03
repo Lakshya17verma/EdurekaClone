@@ -29,6 +29,7 @@ body {
     font-family: var(--mainFont);
     width: 100vw;
     overflow-x: hidden !important;
+    overflow-y: hidden;
 }
 
 li {
@@ -71,7 +72,7 @@ button {
     font-size: 0.9rem;
     font-weight: 600;
     text-align: center;
-    height: 50px;
+    height: 48px;
 }
 
 .ad-para>a,
@@ -1606,6 +1607,7 @@ li:visited li:active {
 }
 
 .box-head {
+    display: none;
     height: 44px;
     box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.14);
     background-color: #ed593e;
@@ -1740,6 +1742,8 @@ li:visited li:active {
     box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.2);
     background: linear-gradient(134deg, #fad961, #f76b1c);
     transition: all 0.6s;
+    opacity: 0;
+    pointer-events: none;
 }
 
 .call-us-float i {
@@ -1781,8 +1785,9 @@ li:visited li:active {
     left: 0;
     right: 0;
     position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.4);
     z-index: 20;
+    overflow: scroll;
 }
 
 .form-container {

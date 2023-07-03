@@ -1,42 +1,42 @@
 // javascript for homepage  advertisement  section
-// function timer() {
-//   const endTime = new Date("26 June 2023 02:00:00 PM");
-//   const currentTime = new Date();
-//   const diffr = (endTime - currentTime) / 1000; 
-//   const days = Math.floor(diffr / (60 * 60 * 24));
-//   const hours = Math.floor(diffr / (60 * 60) % 24);
-//   const minutes = Math.floor((diffr / 60) % 60)
-//   const seconds = Math.floor(diffr % 60)
-//   const showTime = document.getElementsByClassName("time");
-//   showTime[0].innerHTML = days;
-//   showTime[1].innerHTML = hours;
-//   showTime[2].innerHTML = minutes;
-//   showTime[3].innerHTML = seconds;
-// }
-// const adPara = document.querySelector(".ad-para");
-// const cutAdBtn = document.getElementById("cutAd");
-// const viewOffer = document.getElementById("viewOffer");
+function timer() {
+  const endTime = new Date("26 january 2024 02:00:00 PM");
+  const currentTime = new Date();
+  const diffr = (endTime - currentTime) / 1000; 
+  const days = Math.floor(diffr / (60 * 60 * 24));
+  const hours = Math.floor(diffr / (60 * 60) % 24);
+  const minutes = Math.floor((diffr / 60) % 60)
+  const seconds = Math.floor(diffr % 60)
+  const showTime = document.getElementsByClassName("time");
+  showTime[0].innerHTML = days;
+  showTime[1].innerHTML = hours;
+  showTime[2].innerHTML = minutes;
+  showTime[3].innerHTML = seconds;
+}
+const adPara = document.querySelector(".ad-para");
+const cutAdBtn = document.getElementById("cutAd");
+const viewOffer = document.getElementById("viewOffer");
 
-// setTimeout(() => {
-//   setInterval(() => {
-//     timer()
-//   }, 1000);
-//   adPara.classList.remove("hide");
-//   adPara.classList.add("show");
-// }, 2000);
-// cutAdBtn.addEventListener("click", () => {
-//   adPara.classList.remove("show");
-//   adPara.classList.add("hide");
-//   viewOffer.classList.remove("hide")
-//   viewOffer.classList.add("show")
-// })
+setTimeout(() => {
+  setInterval(() => {
+    timer()
+  }, 1000);
+  adPara.classList.remove("hide");
+  adPara.classList.add("show");
+}, 2000);
+cutAdBtn.addEventListener("click", () => {
+  adPara.classList.remove("show");
+  adPara.classList.add("hide");
+  viewOffer.classList.remove("hide")
+  viewOffer.classList.add("show")
+})
 
-// viewOffer.addEventListener("click", () => {
-//   adPara.classList.remove("hide");
-//   adPara.classList.add("show");
-//   viewOffer.classList.add("hide");
-//   viewOffer.classList.remove("show");
-// })
+viewOffer.addEventListener("click", () => {
+  adPara.classList.remove("hide");
+  adPara.classList.add("show");
+  viewOffer.classList.add("hide");
+  viewOffer.classList.remove("show");
+})
 
 
 const browseCatMob = document.querySelector(".browse-cat-con");
@@ -471,11 +471,23 @@ window.addEventListener("scroll" , () =>{
   }
 })
 
+const callUsFloat = document.querySelector(".call-us-float");
+window.addEventListener("scroll" , () =>{
+  if(window.scrollY > 4200 ){
+    callUsFloat.classList.add("call-us-active")
+  }
+  else{
+    callUsFloat.classList.remove("call-us-active")
+  }
+})
+
 const loginSignupSection = document.querySelector(".login-signup-section");
 
 function deleteForm(){
   loginSignupSection.style.display = "none";
   contactBoxBody.classList.toggle("contact-body-height");
+  document.querySelector(".box-head").style.display = "flex";
+  document.body.style.overflowY = "scroll";
   document.querySelector(".box-head i").classList.toggle("btn-rotate");
 }
 
